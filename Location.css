@@ -1,0 +1,134 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_4 */
+#Location_mobilebutton_4 {
+
+}
+.ui-btn.Location_mobilebutton_4 {
+
+}
+/* mobilecontainer */
+.ui-content.Location_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* input */
+.Location_input {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_7 */
+#Location_mobilebutton_7 {
+
+}
+.ui-btn.Location_mobilebutton_7 {
+	margin: 4px 5px 4px 5px;
+}
+/* map */
+.Location_map {
+	width: 320px; height: 280px;
+	margin: 4px 0px 4px 0px;
+}
+/* marker_3 */
+.Location_marker_3 {
+	text-shadow:none;
+	color:black;
+	font-family:Arial;
+}
+/* mobilebutton_8 */
+#Location_mobilebutton_8 {
+
+}
+.ui-btn.Location_mobilebutton_8 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegrid_11 */
+.Location_mobilegrid_11 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.Location_mobilegrid_11 > tr > td {
+	vertical-align: top;
+}
+.Location_mobilegrid_11_row_0, .Location_mobilegrid_11_row_0 > td {
+	height: 30px
+}
+.Location_mobilegrid_11_row_1, .Location_mobilegrid_11_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_12 */
+.Location_mobilegridcell_12 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Location_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_10 */
+.Location_mobilelabel_10 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_13 */
+.Location_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Location_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* latl */
+.Location_latl {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_14 */
+.Location_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Location_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_9 */
+.Location_mobilelabel_9 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_15 */
+.Location_mobilegridcell_15 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.Location_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* longl */
+.Location_longl {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.Location_mobilefooter {
+	min-height:38px;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            DialogInvite
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/connection.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/jquerymd5.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/mampfClientApi.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" data-dialog="true" style="min-height:480px;" dsid="DialogInvite"
+        id="DialogInvite" class="type-interior" data-theme="d" data-close-btn='right'>
+            <!-- mobileheader -->
+            <div data-role="header" data-position="inline" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="DialogInvite_mobileheader" class="DialogInvite_mobileheader">
+                <h1 dsid="mobileheader">
+                    Bestätigung
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="DialogInvite_mobilecontainer" name="mobilecontainer"
+            class="DialogInvite_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="d">
+                <link href="DialogInvite.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="DialogInvite.js">
+                </script>
+                <!-- mobilelabel_2 -->
+                <div name="mobilelabel_2" id="DialogInvite_mobilelabel_2" dsid="mobilelabel_2" data-role="appery_label"
+                class="DialogInvite_mobilelabel_2">
+                    Möchtest du diese Person zum Essen einladen?:
+                </div>
+                <!-- mobilelist_12 -->
+                <ul data-role="listview" id="DialogInvite_mobilelist_12" class="DialogInvite_mobilelist_12"
+                name="mobilelist_12" dsid="mobilelist_12" data-inset="true" data-theme="d" data-divider-theme="b"
+                data-count-theme="b" style="">
+                    <!-- mobilelistitem_13 -->
+                    <li id="DialogInvite_mobilelistitem_13" name="mobilelistitem_13" dsid="mobilelistitem_13"
+                    tabindex="3" data-icon="check" class="DialogInvite_mobilelistitem_13  ui-btn ui-btn-icon-right ui-icon-check">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- invitedLabel -->
+                            <div name="invitedLabel" id="DialogInvite_invitedLabel" dsid="invitedLabel" data-role="appery_label"
+                            class="DialogInvite_invitedLabel">
+                                Label
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- mobilegrid_5 -->
+                <div class="DialogInvite_mobilegrid_5_wrapper" data-wrapper-for="mobilegrid_5">
+                    <table id="DialogInvite_mobilegrid_5" class="DialogInvite_mobilegrid_5" dsid="mobilegrid_5"
+                    name="mobilegrid_5" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:30%;" />
+                        <col style="width:33%;" />
+                        <col style="width:auto;" />
+                        <tr class="DialogInvite_mobilegrid_5_row_0">
+                            <!-- mobilegridcell_6 -->
+                            <td id="DialogInvite_mobilegridcell_6" name="mobilegridcell_6" class="DialogInvite_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_7 -->
+                            <td id="DialogInvite_mobilegridcell_7" name="mobilegridcell_7" class="DialogInvite_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_3 -->
+                                    <a data-role="button" name="mobilebutton_3" dsid="mobilebutton_3" class="DialogInvite_mobilebutton_3"
+                                    id="DialogInvite_mobilebutton_3" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="d" tabindex="1">
+                                    Ja
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_10 -->
+                            <td id="DialogInvite_mobilegridcell_10" name="mobilegridcell_10" class="DialogInvite_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_4 -->
+                                    <a data-role="button" name="mobilebutton_4" dsid="mobilebutton_4" class="DialogInvite_mobilebutton_4"
+                                    id="DialogInvite_mobilebutton_4" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="d" tabindex="2">
+                                    Nein
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_11 -->
+                            <td id="DialogInvite_mobilegridcell_11" name="mobilegridcell_11" class="DialogInvite_mobilegridcell_11"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_53 -->
+                <div class="DialogInvite_mobilegrid_53_wrapper" data-wrapper-for="mobilegrid_53">
+                    <table id="DialogInvite_mobilegrid_53" class="DialogInvite_mobilegrid_53" dsid="mobilegrid_53"
+                    name="mobilegrid_53" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="DialogInvite_mobilegrid_53_row_0">
+                            <!-- mobilegridcell_54 -->
+                            <td id="DialogInvite_mobilegridcell_54" name="mobilegridcell_54" class="DialogInvite_mobilegridcell_54"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_30 -->
+                                    <div name="mobilelabel_30" id="DialogInvite_mobilelabel_30" dsid="mobilelabel_30"
+                                    data-role="appery_label" class="DialogInvite_mobilelabel_30">
+                                        Am:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_55 -->
+                            <td id="DialogInvite_mobilegridcell_55" name="mobilegridcell_55" class="DialogInvite_mobilegridcell_55"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- am -->
+                                    <div name="am" id="DialogInvite_am" dsid="am" data-role="appery_label" class="DialogInvite_am">
+                                        am
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DialogInvite_mobilegrid_53_row_1">
+                            <!-- mobilegridcell_56 -->
+                            <td id="DialogInvite_mobilegridcell_56" name="mobilegridcell_56" class="DialogInvite_mobilegridcell_56"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_31 -->
+                                    <div name="mobilelabel_31" id="DialogInvite_mobilelabel_31" dsid="mobilelabel_31"
+                                    data-role="appery_label" class="DialogInvite_mobilelabel_31">
+                                        Von:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_57 -->
+                            <td id="DialogInvite_mobilegridcell_57" name="mobilegridcell_57" class="DialogInvite_mobilegridcell_57"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_34 -->
+                                    <div class="DialogInvite_mobilegrid_34_wrapper" data-wrapper-for="mobilegrid_34">
+                                        <table id="DialogInvite_mobilegrid_34" class="DialogInvite_mobilegrid_34" dsid="mobilegrid_34"
+                                        name="mobilegrid_34" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:6%;" />
+                                            <col style="width:auto;" />
+                                            <tr class="DialogInvite_mobilegrid_34_row_0">
+                                                <!-- mobilegridcell_35 -->
+                                                <td id="DialogInvite_mobilegridcell_35" name="mobilegridcell_35" class="DialogInvite_mobilegridcell_35"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- vonH -->
+                                                        <div name="vonH" id="DialogInvite_vonH" dsid="vonH" data-role="appery_label" class="DialogInvite_vonH">
+                                                            von
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_36 -->
+                                                <td id="DialogInvite_mobilegridcell_36" name="mobilegridcell_36" class="DialogInvite_mobilegridcell_36"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_41 -->
+                                                        <div name="mobilelabel_41" id="DialogInvite_mobilelabel_41" dsid="mobilelabel_41"
+                                                        data-role="appery_label" class="DialogInvite_mobilelabel_41">
+                                                            :
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_39 -->
+                                                <td id="DialogInvite_mobilegridcell_39" name="mobilegridcell_39" class="DialogInvite_mobilegridcell_39"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- vonM -->
+                                                        <div name="vonM" id="DialogInvite_vonM" dsid="vonM" data-role="appery_label" class="DialogInvite_vonM">
+                                                            von
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DialogInvite_mobilegrid_53_row_2">
+                            <!-- mobilegridcell_58 -->
+                            <td id="DialogInvite_mobilegridcell_58" name="mobilegridcell_58" class="DialogInvite_mobilegridcell_58"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_32 -->
+                                    <div name="mobilelabel_32" id="DialogInvite_mobilelabel_32" dsid="mobilelabel_32"
+                                    data-role="appery_label" class="DialogInvite_mobilelabel_32">
+                                        Bis:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_59 -->
+                            <td id="DialogInvite_mobilegridcell_59" name="mobilegridcell_59" class="DialogInvite_mobilegridcell_59"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- bisUhrzeitGrid -->
+                                    <div class="DialogInvite_bisUhrzeitGrid_wrapper" data-wrapper-for="bisUhrzeitGrid">
+                                        <table id="DialogInvite_bisUhrzeitGrid" class="DialogInvite_bisUhrzeitGrid" dsid="bisUhrzeitGrid"
+                                        name="bisUhrzeitGrid" cellpadding=0 cellspacing=0>
+                                            <col style="width:auto;" />
+                                            <col style="width:6%;" />
+                                            <col style="width:auto;" />
+                                            <tr class="DialogInvite_bisUhrzeitGrid_row_0">
+                                                <!-- mobilegridcell_44 -->
+                                                <td id="DialogInvite_mobilegridcell_44" name="mobilegridcell_44" class="DialogInvite_mobilegridcell_44"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- bisH -->
+                                                        <div name="bisH" id="DialogInvite_bisH" dsid="bisH" data-role="appery_label" class="DialogInvite_bisH">
+                                                            bis
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_45 -->
+                                                <td id="DialogInvite_mobilegridcell_45" name="mobilegridcell_45" class="DialogInvite_mobilegridcell_45"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_50 -->
+                                                        <div name="mobilelabel_50" id="DialogInvite_mobilelabel_50" dsid="mobilelabel_50"
+                                                        data-role="appery_label" class="DialogInvite_mobilelabel_50">
+                                                            :
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_48 -->
+                                                <td id="DialogInvite_mobilegridcell_48" name="mobilegridcell_48" class="DialogInvite_mobilegridcell_48"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- bisM -->
+                                                        <div name="bisM" id="DialogInvite_bisM" dsid="bisM" data-role="appery_label" class="DialogInvite_bisM">
+                                                            bis
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DialogInvite_mobilegrid_53_row_3">
+                            <!-- mobilegridcell_60 -->
+                            <td id="DialogInvite_mobilegridcell_60" name="mobilegridcell_60" class="DialogInvite_mobilegridcell_60"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_33 -->
+                                    <div name="mobilelabel_33" id="DialogInvite_mobilelabel_33" dsid="mobilelabel_33"
+                                    data-role="appery_label" class="DialogInvite_mobilelabel_33">
+                                        Ort:
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_61 -->
+                            <td id="DialogInvite_mobilegridcell_61" name="mobilegridcell_61" class="DialogInvite_mobilegridcell_61"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- ort -->
+                                    <div name="ort" id="DialogInvite_ort" dsid="ort" data-role="appery_label" class="DialogInvite_ort">
+                                        Uni Lübeck
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="inline" class="DialogInvite_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="DialogInvite_mobilefooter" data-theme="d">
+            </div>
+        </div>
+    </body>
+
+</html>

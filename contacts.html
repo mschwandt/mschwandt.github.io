@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            contacts
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/connection.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/jquerymd5.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/mampfClientApi.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="contacts" id="contacts" class="type-interior"
+        data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Zurück"
+            data-theme="d" name="mobileheader" id="contacts_mobileheader" class="contacts_mobileheader">
+                <h1 dsid="mobileheader">
+                    Kontakte NATIV
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="contacts_mobilecontainer" name="mobilecontainer" class="contacts_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="contacts.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="contacts.js">
+                </script>
+                <!-- mobilelabel_18 -->
+                <div name="mobilelabel_18" id="contacts_mobilelabel_18" dsid="mobilelabel_18" data-role="appery_label"
+                class="contacts_mobilelabel_18">
+                    funktioniert nur im iOS-Simulator oder direkt auf dem Device
+                </div>
+                <!-- query_input -->
+                <div data-role="fieldcontain" class="contacts_query_input ">
+                    <input type="text" name="query_input" dsid="query_input" value="" placeholder="Namen eingeben..."
+                    id="contacts_query_input" tabindex="1" multiple data-theme="d" class="contacts_query_input"
+                    />
+                </div>
+                <!-- search_button -->
+                <a data-role="button" name="search_button" dsid="search_button" class="contacts_search_button"
+                id="contacts_search_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="d" tabindex="2">
+                Button
+                </a>
+                <!-- contacts_list -->
+                <ul data-role="listview" id="contacts_contacts_list" class="contacts_contacts_list"
+                name="contacts_list" dsid="contacts_list" data-inset="true" data-theme="d" data-divider-theme="b"
+                data-count-theme="b" style="">
+                    <!-- mobilelistitem_5 -->
+                    <li id="contacts_mobilelistitem_5" name="mobilelistitem_5" dsid="mobilelistitem_5"
+                    tabindex="3" data-icon="plus" class="contacts_mobilelistitem_5  ui-btn ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- contact_name -->
+                            <div name="contact_name" id="contacts_contact_name" dsid="contact_name" data-role="appery_label"
+                            class="contacts_contact_name">
+                            </div>
+                            <!-- phone_number -->
+                            <div name="phone_number" id="contacts_phone_number" dsid="phone_number" data-role="appery_label"
+                            class="contacts_phone_number">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="contacts_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="contacts_mobilefooter" data-theme="d">
+            </div>
+        </div>
+    </body>
+
+</html>

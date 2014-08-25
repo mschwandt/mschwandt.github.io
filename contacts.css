@@ -1,0 +1,68 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.contacts_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel_18 */
+.contacts_mobilelabel_18 {
+	text-decoration: none; font-weight: normal; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* query_input */
+.contacts_query_input {
+	margin: 4px 0px 4px 0px;
+}
+/* search_button */
+#contacts_search_button {
+
+}
+.ui-btn.contacts_search_button {
+	margin: 4px 5px 4px 5px;
+}
+/* contacts_list */
+.ui-page .contacts_contacts_list {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_5 */
+.ui-mobile-viewport ul[data-role="listview"] li.contacts_mobilelistitem_5 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.contacts_mobilelistitem_5 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.contacts_mobilelistitem_5.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_6 */
+.contacts_mobilelistitembutton_6 {
+
+}
+/* contact_name */
+.contacts_contact_name {
+	text-decoration: none; font-weight: bold; color: #000000; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* phone_number */
+.contacts_phone_number {
+	text-decoration: none; font-weight: bold; color: #000000; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.contacts_mobilefooter {
+	min-height:38px;
+}

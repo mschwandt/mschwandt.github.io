@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/connection.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/jquerymd5.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/mampfClientApi.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="d">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader1" id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    Mampf
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class="startScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="d">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="startScreen_mobilelabel_10" dsid="mobilelabel_10"
+                data-role="appery_label" class="startScreen_mobilelabel_10">
+                    meine Nummer
+                </div>
+                <!-- mobilegrid_52 -->
+                <div class="startScreen_mobilegrid_52_wrapper" data-wrapper-for="mobilegrid_52">
+                    <table id="startScreen_mobilegrid_52" class="startScreen_mobilegrid_52" dsid="mobilegrid_52"
+                    name="mobilegrid_52" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_52_row_0">
+                            <!-- mobilegridcell_53 -->
+                            <td id="startScreen_mobilegridcell_53" name="mobilegridcell_53" class="startScreen_mobilegridcell_53"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- myNumberInput -->
+                                    <div data-role="fieldcontain" class="startScreen_myNumberInput ">
+                                        <input type="text" name="myNumberInput" dsid="myNumberInput" value="" placeholder="491711234567"
+                                        id="startScreen_myNumberInput" tabindex="1" multiple data-theme="d" class="startScreen_myNumberInput"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_54 -->
+                            <td id="startScreen_mobilegridcell_54" name="mobilegridcell_54" class="startScreen_mobilegridcell_54"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_14 -->
+                                    <a data-role="button" name="mobilebutton_14" dsid="mobilebutton_14" class="startScreen_mobilebutton_14"
+                                    id="startScreen_mobilebutton_14" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="true" data-theme="d" tabindex="3">
+                                    MD5 berechnen
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- md5Label -->
+                <div name="md5Label" id="startScreen_md5Label" dsid="md5Label" data-role="appery_label"
+                class="startScreen_md5Label">
+                    MD5:
+                </div>
+                <!-- datepicker -->
+                <div id="startScreen_datepicker" dsid="datepicker" name="datepicker" tiggzitype="object"
+                apperytype="object" apperyclass="datepicker" tiggziclass="datepicker" data-theme="d"
+                class="startScreen_datepicker ui-field-contain">
+                    <div class="datePickerControls">
+                        <a data-role="button" data-corners="true" data-icon="grid" data-iconpos="notext"
+                        data-mini="false" data-theme="d" class="datepickeropenbutton" title="Open Date Picker"
+                        style="margin-top:3px; vertical-align: middle; display: inline-block;">
+                        Open Date Picker
+                        </a>
+                        <div class="inputContainer">
+                            <input type="text" data-theme="d" value="" tabindex="4" />
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilegrid_82 -->
+                <div class="startScreen_mobilegrid_82_wrapper" data-wrapper-for="mobilegrid_82">
+                    <table id="startScreen_mobilegrid_82" class="startScreen_mobilegrid_82" dsid="mobilegrid_82"
+                    name="mobilegrid_82" cellpadding=0 cellspacing=0>
+                        <col style="width:20%;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_82_row_0">
+                            <!-- mobilegridcell_83 -->
+                            <td id="startScreen_mobilegridcell_83" name="mobilegridcell_83" class="startScreen_mobilegridcell_83"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_87 -->
+                                    <div name="mobilelabel_87" id="startScreen_mobilelabel_87" dsid="mobilelabel_87"
+                                    data-role="appery_label" class="startScreen_mobilelabel_87">
+                                        Stunde
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_84 -->
+                            <td id="startScreen_mobilegridcell_84" name="mobilegridcell_84" class="startScreen_mobilegridcell_84"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- StundeSlider -->
+                                    <div data-role="fieldcontain" class="startScreen_StundeSlider ">
+                                        <input type="range" reRender="StundeSlider" name="StundeSlider" dsid="StundeSlider"
+                                        id="startScreen_StundeSlider" data-theme="d" data-track-theme="d" value="12" min="0"
+                                        max="23" tabindex="8" class="startScreen_StundeSlider" data-mini="false" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="startScreen_mobilegrid_82_row_1">
+                            <!-- mobilegridcell_85 -->
+                            <td id="startScreen_mobilegridcell_85" name="mobilegridcell_85" class="startScreen_mobilegridcell_85"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_88 -->
+                                    <div name="mobilelabel_88" id="startScreen_mobilelabel_88" dsid="mobilelabel_88"
+                                    data-role="appery_label" class="startScreen_mobilelabel_88">
+                                        Minute
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_86 -->
+                            <td id="startScreen_mobilegridcell_86" name="mobilegridcell_86" class="startScreen_mobilegridcell_86"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- MinuteSlider -->
+                                    <div data-role="fieldcontain" class="startScreen_MinuteSlider ">
+                                        <input type="range" reRender="MinuteSlider" name="MinuteSlider" dsid="MinuteSlider"
+                                        id="startScreen_MinuteSlider" data-theme="d" data-track-theme="d" value="0" min="0"
+                                        max="59" tabindex="9" class="startScreen_MinuteSlider" data-mini="false" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_63 -->
+                <div class="startScreen_mobilegrid_63_wrapper" data-wrapper-for="mobilegrid_63">
+                    <table id="startScreen_mobilegrid_63" class="startScreen_mobilegrid_63" dsid="mobilegrid_63"
+                    name="mobilegrid_63" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_63_row_0">
+                            <!-- mobilegridcell_64 -->
+                            <td id="startScreen_mobilegridcell_64" name="mobilegridcell_64" class="startScreen_mobilegridcell_64"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_68 -->
+                                    <img class="startScreen_mobileimage_68" src="files/views/assets/image/sushi.jpg"
+                                    id="startScreen_mobileimage_68" dsid="mobileimage_68" name="mobileimage_68" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_65 -->
+                            <td id="startScreen_mobilegridcell_65" name="mobilegridcell_65" class="startScreen_mobilegridcell_65"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilegrid_30 -->
+                                    <div class="startScreen_mobilegrid_30_wrapper" data-wrapper-for="mobilegrid_30">
+                                        <table id="startScreen_mobilegrid_30" class="startScreen_mobilegrid_30" dsid="mobilegrid_30"
+                                        name="mobilegrid_30" cellpadding=0 cellspacing=0>
+                                            <col style="width:47px;" />
+                                            <col style="width:25px;" />
+                                            <col style="width:47px;" />
+                                            <tr class="startScreen_mobilegrid_30_row_0">
+                                                <!-- mobilegridcell_31 -->
+                                                <td id="startScreen_mobilegridcell_31" name="mobilegridcell_31" class="startScreen_mobilegridcell_31"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_37 -->
+                                                        <div name="mobilelabel_37" id="startScreen_mobilelabel_37" dsid="mobilelabel_37"
+                                                        data-role="appery_label" class="startScreen_mobilelabel_37">
+                                                            Von:
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_32 -->
+                                                <td id="startScreen_mobilegridcell_32" name="mobilegridcell_32" class="startScreen_mobilegridcell_32"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- vonStunde -->
+                                                        <div name="vonStunde" id="startScreen_vonStunde" dsid="vonStunde" data-role="appery_label"
+                                                        class="startScreen_vonStunde">
+                                                            12
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_35 -->
+                                                <td id="startScreen_mobilegridcell_35" name="mobilegridcell_35" class="startScreen_mobilegridcell_35"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_47 -->
+                                                        <div class="startScreen_mobilegrid_47_wrapper" data-wrapper-for="mobilegrid_47">
+                                                            <table id="startScreen_mobilegrid_47" class="startScreen_mobilegrid_47" dsid="mobilegrid_47"
+                                                            name="mobilegrid_47" cellpadding=0 cellspacing=0>
+                                                                <col style="width:14px;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="startScreen_mobilegrid_47_row_0">
+                                                                    <!-- mobilegridcell_48 -->
+                                                                    <td id="startScreen_mobilegridcell_48" name="mobilegridcell_48" class="startScreen_mobilegridcell_48"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_46 -->
+                                                                            <div name="mobilelabel_46" id="startScreen_mobilelabel_46" dsid="mobilelabel_46"
+                                                                            data-role="appery_label" class="startScreen_mobilelabel_46">
+                                                                                :
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_49 -->
+                                                                    <td id="startScreen_mobilegridcell_49" name="mobilegridcell_49" class="startScreen_mobilegridcell_49"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- vonMinute -->
+                                                                            <div name="vonMinute" id="startScreen_vonMinute" dsid="vonMinute" data-role="appery_label"
+                                                                            class="startScreen_vonMinute">
+                                                                                00
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="startScreen_mobilegrid_30_row_1">
+                                                <!-- mobilegridcell_33 -->
+                                                <td id="startScreen_mobilegridcell_33" name="mobilegridcell_33" class="startScreen_mobilegridcell_33"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_38 -->
+                                                        <div name="mobilelabel_38" id="startScreen_mobilelabel_38" dsid="mobilelabel_38"
+                                                        data-role="appery_label" class="startScreen_mobilelabel_38">
+                                                            Bis:
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_34 -->
+                                                <td id="startScreen_mobilegridcell_34" name="mobilegridcell_34" class="startScreen_mobilegridcell_34"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- bisStundeL -->
+                                                        <div name="bisStundeL" id="startScreen_bisStundeL" dsid="bisStundeL" data-role="appery_label"
+                                                        class="startScreen_bisStundeL">
+                                                            13
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_36 -->
+                                                <td id="startScreen_mobilegridcell_36" name="mobilegridcell_36" class="startScreen_mobilegridcell_36"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilegrid_57 -->
+                                                        <div class="startScreen_mobilegrid_57_wrapper" data-wrapper-for="mobilegrid_57">
+                                                            <table id="startScreen_mobilegrid_57" class="startScreen_mobilegrid_57" dsid="mobilegrid_57"
+                                                            name="mobilegrid_57" cellpadding=0 cellspacing=0>
+                                                                <col style="width:14px;" />
+                                                                <col style="width:auto;" />
+                                                                <tr class="startScreen_mobilegrid_57_row_0">
+                                                                    <!-- mobilegridcell_58 -->
+                                                                    <td id="startScreen_mobilegridcell_58" name="mobilegridcell_58" class="startScreen_mobilegridcell_58"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- mobilelabel_62 -->
+                                                                            <div name="mobilelabel_62" id="startScreen_mobilelabel_62" dsid="mobilelabel_62"
+                                                                            data-role="appery_label" class="startScreen_mobilelabel_62">
+                                                                                :
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!-- mobilegridcell_59 -->
+                                                                    <td id="startScreen_mobilegridcell_59" name="mobilegridcell_59" class="startScreen_mobilegridcell_59"
+                                                                    colspan=1 rowspan=1>
+                                                                        <div class="cell-wrapper">
+                                                                            <!-- bisMinuteL -->
+                                                                            <div name="bisMinuteL" id="startScreen_bisMinuteL" dsid="bisMinuteL" data-role="appery_label"
+                                                                            class="startScreen_bisMinuteL">
+                                                                                00
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="startScreen_mobilegrid_30_row_2">
+                                                <!-- mobilegridcell_90 -->
+                                                <td id="startScreen_mobilegridcell_90" name="mobilegridcell_90" class="startScreen_mobilegridcell_90"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- mobilelabel_93 -->
+                                                        <div name="mobilelabel_93" id="startScreen_mobilelabel_93" dsid="mobilelabel_93"
+                                                        data-role="appery_label" class="startScreen_mobilelabel_93">
+                                                            Am:
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_91 -->
+                                                <td id="startScreen_mobilegridcell_91" name="mobilegridcell_91" class="startScreen_mobilegridcell_91"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                    </div>
+                                                </td>
+                                                <!-- mobilegridcell_92 -->
+                                                <td id="startScreen_mobilegridcell_92" name="mobilegridcell_92" class="startScreen_mobilegridcell_92"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- DatumL -->
+                                                        <div name="DatumL" id="startScreen_DatumL" dsid="DatumL" data-role="appery_label"
+                                                        class="startScreen_DatumL">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- gridClock -->
+                <div class="startScreen_gridClock_wrapper" data-wrapper-for="gridClock">
+                    <table id="startScreen_gridClock" class="startScreen_gridClock" dsid="gridClock"
+                    name="gridClock" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_gridClock_row_0">
+                            <!-- mobilegridcell_72 -->
+                            <td id="startScreen_mobilegridcell_72" name="mobilegridcell_72" class="startScreen_mobilegridcell_72"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_24 -->
+                                    <div name="mobilelabel_24" id="startScreen_mobilelabel_24" dsid="mobilelabel_24"
+                                    data-role="appery_label" class="startScreen_mobilelabel_24">
+                                        Stunde
+                                    </div>
+                                    <!-- selectH -->
+                                    <div data-role="fieldcontain" class="startScreen_selectH ">
+                                        <select name="selectH" id="startScreen_selectH" dsid="selectH" data-theme="d" data-inline="false"
+                                        data-mini="false" data-icon="arrow-d" data-iconpos="right" data-native-menu="false"
+                                        tabindex="11" appery-class="startScreen_selectH">
+                                            <option id="startScreen_selectH-0" value="10" reRender="selectH" dsid="selectH-0"
+                                            selected="selected">
+                                                10
+                                            </option>
+                                            <option id="startScreen_selectH-1" value="11" reRender="selectH" dsid="selectH-1">
+                                                11
+                                            </option>
+                                            <option id="startScreen_selectH-2" value="12" reRender="selectH" dsid="selectH-2">
+                                                12
+                                            </option>
+                                            <option id="startScreen_selectH-3" value="13" reRender="selectH" dsid="selectH-3">
+                                                13
+                                            </option>
+                                            <option id="startScreen_selectH-4" value="14" reRender="selectH" dsid="selectH-4">
+                                                14
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_73 -->
+                            <td id="startScreen_mobilegridcell_73" name="mobilegridcell_73" class="startScreen_mobilegridcell_73"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_25 -->
+                                    <div name="mobilelabel_25" id="startScreen_mobilelabel_25" dsid="mobilelabel_25"
+                                    data-role="appery_label" class="startScreen_mobilelabel_25">
+                                        Minute
+                                    </div>
+                                    <!-- selectM -->
+                                    <div data-role="fieldcontain" class="startScreen_selectM ">
+                                        <select name="selectM" id="startScreen_selectM" dsid="selectM" data-theme="d" data-inline="false"
+                                        data-mini="false" data-icon="arrow-d" data-iconpos="right" data-native-menu="true"
+                                        tabindex="10" appery-class="startScreen_selectM">
+                                            <option id="startScreen_selectM-0" value="00" reRender="selectM" dsid="selectM-0"
+                                            selected="selected">
+                                                00
+                                            </option>
+                                            <option id="startScreen_selectM-1" value="15" reRender="selectM" dsid="selectM-1">
+                                                15
+                                            </option>
+                                            <option id="startScreen_selectM-2" value="30" reRender="selectM" dsid="selectM-2">
+                                                30
+                                            </option>
+                                            <option id="startScreen_selectM-3" value="45" reRender="selectM" dsid="selectM-3">
+                                                45
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="d">
+                <!-- mobilenavbar_41 -->
+                <div data-role="navbar" id="startScreen_mobilenavbar_41" name="mobilenavbar_41"
+                dsid="mobilenavbar_41" class="startScreen_mobilenavbar_41" data-theme="d" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_42 -->
+                        <li>
+                            <a data-theme="d" data-icon="phone" id="startScreen_mobilenavbaritem_42" dsid="mobilenavbaritem_42"
+                            name="mobilenavbaritem_42">
+                            My Number
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_43 -->
+                        <li>
+                            <a data-theme="d" data-icon="user" id="startScreen_mobilenavbaritem_43" dsid="mobilenavbaritem_43"
+                            name="mobilenavbaritem_43">
+                            Kontakte
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_44 -->
+                        <li>
+                            <a data-theme="d" data-icon="location" id="startScreen_mobilenavbaritem_44" dsid="mobilenavbaritem_44"
+                            name="mobilenavbaritem_44">
+                            Ort
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

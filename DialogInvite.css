@@ -1,0 +1,393 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.2/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.DialogInvite_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel_2 */
+.DialogInvite_mobilelabel_2 {
+	text-decoration: none; font-weight: normal; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilelist_12 */
+.ui-page .DialogInvite_mobilelist_12 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_13 */
+.ui-mobile-viewport ul[data-role="listview"] li.DialogInvite_mobilelistitem_13 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.DialogInvite_mobilelistitem_13 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.DialogInvite_mobilelistitem_13.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_14 */
+.DialogInvite_mobilelistitembutton_14 {
+
+}
+/* invitedLabel */
+.DialogInvite_invitedLabel {
+	text-decoration: none; font-weight: normal; color: #000000; text-align: center; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegrid_5 */
+.DialogInvite_mobilegrid_5 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.DialogInvite_mobilegrid_5 > tr > td {
+	vertical-align: top;
+}
+.DialogInvite_mobilegrid_5_row_0, .DialogInvite_mobilegrid_5_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_6 */
+.DialogInvite_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_7 */
+.DialogInvite_mobilegridcell_7 {
+	height:30px !important;
+	width:30%;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_3 */
+#DialogInvite_mobilebutton_3 {
+
+}
+.ui-btn.DialogInvite_mobilebutton_3 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_10 */
+.DialogInvite_mobilegridcell_10 {
+	height:30px !important;
+	width:33%;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_4 */
+#DialogInvite_mobilebutton_4 {
+
+}
+.ui-btn.DialogInvite_mobilebutton_4 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_11 */
+.DialogInvite_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_53 */
+.DialogInvite_mobilegrid_53 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.DialogInvite_mobilegrid_53 > tr > td {
+	vertical-align: top;
+}
+.DialogInvite_mobilegrid_53_row_0, .DialogInvite_mobilegrid_53_row_0 > td {
+	height: 30px
+}
+.DialogInvite_mobilegrid_53_row_1, .DialogInvite_mobilegrid_53_row_1 > td {
+	height: 30px
+}
+.DialogInvite_mobilegrid_53_row_2, .DialogInvite_mobilegrid_53_row_2 > td {
+	height: 30px
+}
+.DialogInvite_mobilegrid_53_row_3, .DialogInvite_mobilegrid_53_row_3 > td {
+	height: 30px
+}
+/* mobilegridcell_54 */
+.DialogInvite_mobilegridcell_54 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_54 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_30 */
+.DialogInvite_mobilelabel_30 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_55 */
+.DialogInvite_mobilegridcell_55 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_55 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* am */
+.DialogInvite_am {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_56 */
+.DialogInvite_mobilegridcell_56 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_56 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_31 */
+.DialogInvite_mobilelabel_31 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_57 */
+.DialogInvite_mobilegridcell_57 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_57 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_34 */
+.DialogInvite_mobilegrid_34 {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.DialogInvite_mobilegrid_34 > tr > td {
+	vertical-align: top;
+}
+.DialogInvite_mobilegrid_34_row_0, .DialogInvite_mobilegrid_34_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_35 */
+.DialogInvite_mobilegridcell_35 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* vonH */
+.DialogInvite_vonH {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: right; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_36 */
+.DialogInvite_mobilegridcell_36 {
+	height:30px !important;
+	width:6%;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_41 */
+.DialogInvite_mobilelabel_41 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_39 */
+.DialogInvite_mobilegridcell_39 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_39 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* vonM */
+.DialogInvite_vonM {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_58 */
+.DialogInvite_mobilegridcell_58 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_58 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_32 */
+.DialogInvite_mobilelabel_32 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_59 */
+.DialogInvite_mobilegridcell_59 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_59 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* bisUhrzeitGrid */
+.DialogInvite_bisUhrzeitGrid {
+	height: auto;
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.DialogInvite_bisUhrzeitGrid > tr > td {
+	vertical-align: top;
+}
+.DialogInvite_bisUhrzeitGrid_row_0, .DialogInvite_bisUhrzeitGrid_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_44 */
+.DialogInvite_mobilegridcell_44 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_44 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* bisH */
+.DialogInvite_bisH {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: right; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_45 */
+.DialogInvite_mobilegridcell_45 {
+	height:30px !important;
+	width:6%;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_45 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_50 */
+.DialogInvite_mobilelabel_50 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_48 */
+.DialogInvite_mobilegridcell_48 {
+	height:30px !important;
+	width:auto;
+	padding: 0px 0px 0px 0px;
+}
+.DialogInvite_mobilegridcell_48 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* bisM */
+.DialogInvite_bisM {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_60 */
+.DialogInvite_mobilegridcell_60 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_60 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_33 */
+.DialogInvite_mobilelabel_33 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_61 */
+.DialogInvite_mobilegridcell_61 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DialogInvite_mobilegridcell_61 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* ort */
+.DialogInvite_ort {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilefooter */
+.DialogInvite_mobilefooter {
+	min-height:38px;
+}

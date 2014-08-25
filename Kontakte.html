@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Kontakte
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/connection.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/jquerymd5.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/mampfClientApi.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Kontakte" id="Kontakte" class="type-interior"
+        data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="inline" data-add-back-btn="true" data-back-btn-text="Zurück"
+            data-theme="d" name="mobileheader" id="Kontakte_mobileheader" class="Kontakte_mobileheader">
+                <h1 dsid="mobileheader">
+                    Kontakte
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Kontakte_mobilecontainer" name="mobilecontainer" class="Kontakte_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="Kontakte.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Kontakte.js">
+                </script>
+                <!-- mobilelist_2 -->
+                <ul data-role="listview" id="Kontakte_mobilelist_2" class="Kontakte_mobilelist_2"
+                name="mobilelist_2" dsid="mobilelist_2" data-inset="true" data-filter="true" data-filter-theme="f"
+                data-theme="f" data-autodividers="true" data-divider-theme="e" data-count-theme="d"
+                style="">
+                    <!-- mobilelistitem_3 -->
+                    <li id="Kontakte_mobilelistitem_3" name="mobilelistitem_3" dsid="mobilelistitem_3"
+                    data-icon="plus" class="Kontakte_mobilelistitem_3  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Leonard Leakey Hofstadter
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_5 -->
+                    <li id="Kontakte_mobilelistitem_5" name="mobilelistitem_5" dsid="mobilelistitem_5"
+                    data-icon="plus" class="Kontakte_mobilelistitem_5  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Sheldon Lee Cooper
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_7 -->
+                    <li id="Kontakte_mobilelistitem_7" name="mobilelistitem_7" dsid="mobilelistitem_7"
+                    data-icon="plus" class="Kontakte_mobilelistitem_7  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Penny
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_9 -->
+                    <li id="Kontakte_mobilelistitem_9" name="mobilelistitem_9" dsid="mobilelistitem_9"
+                    data-icon="plus" class="Kontakte_mobilelistitem_9  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Howard Joel Wolowitz
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_11 -->
+                    <li id="Kontakte_mobilelistitem_11" name="mobilelistitem_11" dsid="mobilelistitem_11"
+                    data-icon="plus" class="Kontakte_mobilelistitem_11  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Rajesh Ramayan Koothrappali
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_13 -->
+                    <li id="Kontakte_mobilelistitem_13" name="mobilelistitem_13" dsid="mobilelistitem_13"
+                    data-icon="plus" class="Kontakte_mobilelistitem_13  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Leslie Winkle
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_15 -->
+                    <li id="Kontakte_mobilelistitem_15" name="mobilelistitem_15" dsid="mobilelistitem_15"
+                    data-icon="plus" class="Kontakte_mobilelistitem_15  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Amy Farrah Fowler
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_17 -->
+                    <li id="Kontakte_mobilelistitem_17" name="mobilelistitem_17" dsid="mobilelistitem_17"
+                    data-icon="plus" class="Kontakte_mobilelistitem_17  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Stuart Bloom
+                            </h3>
+                            </a>
+                    </li>
+                    <!-- mobilelistitem_19 -->
+                    <li id="Kontakte_mobilelistitem_19" name="mobilelistitem_19" dsid="mobilelistitem_19"
+                    data-icon="plus" class="Kontakte_mobilelistitem_19  ui-btn-icon-right ui-icon-plus">
+                        <div class="ui-li-static-container">
+                            <h3>
+                                Bernadette Maryann Rostenkowski
+                            </h3>
+                            </a>
+                    </li>
+                </ul>
+                </div>
+                <!-- mobilefooter -->
+                <div data-role="footer" data-position="fixed" class="Kontakte_mobilefooter" name="mobilefooter"
+                dsid="mobilefooter" id="Kontakte_mobilefooter" data-theme="d">
+                </div>
+                </div>
+    </body>
+
+</html>

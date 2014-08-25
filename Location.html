@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Location
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios7/ios7.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/connection.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/jquerymd5.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/mampfClientApi.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                $.mobile.page.prototype.options.degradeInputs.date = true;
+            });
+        </script>
+        <div data-role="page" style="min-height:800px;" dsid="Location" id="Location" class="type-interior"
+        data-theme="d">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="Location_mobileheader" class="Location_mobileheader">
+                <h1 dsid="mobileheader">
+                    Ort wählen
+                </h1>
+                <!-- mobilebutton_4 -->
+                <a data-role="button" name="mobilebutton_4" dsid="mobilebutton_4" class="Location_mobilebutton_4 ui-btn-left"
+                id="Location_mobilebutton_4" data-corners="true" data-icon="carat-l" data-iconpos="left"
+                data-inline='true' data-mini='true' data-theme="d" tabindex="2">
+                Zurück
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Location_mobilecontainer" name="mobilecontainer" class="Location_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="d">
+                <link href="Location.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Location.js">
+                </script>
+                <!-- input -->
+                <div data-role="fieldcontain" class="Location_input ">
+                    <input type="text" name="input" dsid="input" value="" placeholder="Location eingeben..."
+                    id="Location_input" tabindex="3" multiple data-theme="d" class="Location_input" />
+                </div>
+                <!-- mobilebutton_7 -->
+                <a data-role="button" name="mobilebutton_7" dsid="mobilebutton_7" class="Location_mobilebutton_7"
+                id="Location_mobilebutton_7" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="d" tabindex="4">
+                Location anzeigen
+                </a>
+                <!-- map -->
+                <div id="Location_map" dsid="map" name="map" tiggzitype="object" apperytype="object"
+                class='Location_map' style='width:100%;'>
+                    <img class='Location_map' src="http://assets1.geocommons.com/d51ab1366bec6a2c4954db979e5921bd4cc140db/images/no_preview_map.png?1311276822"
+                    />
+                </div>
+                <ul data-role="listview" id="Location_map_markers" name="map_markers" dsid="map_markers"
+                style="display:none">
+                    <!-- marker_3 -->
+                    <li id="Location_marker_3" name="marker_3" dsid="marker_3" tiggzitype="marker" apperytype="marker"
+                    rendered="true" latitude="" longitude="" text="Add Components Here" address="San Francisco, CA"
+                    show_info="true" style="display:none">
+                        <div id="Location_marker_3_infoWindow" name="marker_3_infoWindowContent" class='Location_marker_3'>
+                        </div>
+                    </li>
+                </ul>
+                <!-- mobilebutton_8 -->
+                <a data-role="button" name="mobilebutton_8" dsid="mobilebutton_8" class="Location_mobilebutton_8"
+                id="Location_mobilebutton_8" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="d" tabindex="5">
+                Meine Position
+                </a>
+                <!-- mobilegrid_11 -->
+                <div class="Location_mobilegrid_11_wrapper" data-wrapper-for="mobilegrid_11">
+                    <table id="Location_mobilegrid_11" class="Location_mobilegrid_11" dsid="mobilegrid_11"
+                    name="mobilegrid_11" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Location_mobilegrid_11_row_0">
+                            <!-- mobilegridcell_12 -->
+                            <td id="Location_mobilegridcell_12" name="mobilegridcell_12" class="Location_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_10 -->
+                                    <div name="mobilelabel_10" id="Location_mobilelabel_10" dsid="mobilelabel_10" data-role="appery_label"
+                                    class="Location_mobilelabel_10">
+                                        Latitude
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_13 -->
+                            <td id="Location_mobilegridcell_13" name="mobilegridcell_13" class="Location_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- latl -->
+                                    <div name="latl" id="Location_latl" dsid="latl" data-role="appery_label" class="Location_latl">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Location_mobilegrid_11_row_1">
+                            <!-- mobilegridcell_14 -->
+                            <td id="Location_mobilegridcell_14" name="mobilegridcell_14" class="Location_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_9 -->
+                                    <div name="mobilelabel_9" id="Location_mobilelabel_9" dsid="mobilelabel_9" data-role="appery_label"
+                                    class="Location_mobilelabel_9">
+                                        Longitude
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_15 -->
+                            <td id="Location_mobilegridcell_15" name="mobilegridcell_15" class="Location_mobilegridcell_15"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- longl -->
+                                    <div name="longl" id="Location_longl" dsid="longl" data-role="appery_label" class="Location_longl">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Location_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Location_mobilefooter" data-theme="d">
+            </div>
+        </div>
+    </body>
+
+</html>
