@@ -27,7 +27,7 @@ function setDetailContent(pageUrl) {
 
 Apperyio.AppPages = [{
     "name": "Location",
-    "location": "Location.html"
+    "location": "Lokation.html"
 }, {
     "name": "Kontakte",
     "location": "Kontakte.html"
